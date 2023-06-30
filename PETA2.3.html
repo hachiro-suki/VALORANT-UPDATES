@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Performance Task #3</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  w<style>
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+        }
+      li {
+      float: left;
+        }
+      li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+        }
+      li a:hover:not(.active) {
+      background-color: #111;
+        }
+      .active {
+      background-color: #891010;
+        }
+  </style>
+</head>
+<body background="Valorant_2022_E5A2_PlayVALORANT_PlayValorantHomepage.jpg"></body>
+  <body>
+     <ul>
+       <li><a style="font-size: 25px;" class="active" href="file:///C:/Users/John%20Cyrus%20Rillon/Documents/11%20-%20Web%20Design/PETA0.3.html"><strong>Home</strong></a></li>
+       <li><a style="font-size: 25px;" href="file:///C:/Users/John%20Cyrus%20Rillon/Documents/11%20-%20Web%20Design/PETA1.3.html"><strong>News</strong></a></li>
+       <li><a style="font-size: 25px;" href="file:///C:/Users/John%20Cyrus%20Rillon/Documents/11%20-%20Web%20Design/PETA2.3.html"><strong>Patch Notes</strong></a></li>
+       <li><a style="font-size: 25px;" href="file:///C:/Users/John%20Cyrus%20Rillon/Documents/11%20-%20Web%20Design/PETA3.3.html"><strong>About</a></li>
+    </ul>
+  <br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }   
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+     <img src="Patch_5.07_Notes_Highlights1.jpg" style="width:100%">
+  </div>
+<div class="mySlides fade">
+  <img src="100422_AFTER001patch2.jpg" style="width:100%">
+     </div>
+  <div class="mySlides fade">
+<img src="100422_AFTER001AFTER002patch3.jpg" style="width:100%">
+  </div>
+     <div class="mySlides fade">
+  <img src="100422_AFTER001AFTER003patch4.jpg" style="width:100%">
+</div>
+  <div class="mySlides fade">
+     <img src="100422_AFTER001AFTER004patch4.jpg" style="width:100%">
+  </div>
+<div class="mySlides fade">
+  <img src="100422_AFTER001AFTER005patche5.jpg" style="width:100%">
+     </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+   <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+<br>
+  <h1 style="color: white; font-size: 250%;"><em>&nbsp; VALORANT PATCH NOTES</em> <sub>5.07</sub></h1>
+     <p style="color: white; font-size: 90%;">
+        The VALORANT <mark>Character Design team is constantly discussing the state of the Agent meta</mark>, and wanted to make some changes to sharpen some of our Agents and role definitions. We’re in a more stable state since Champions, and Game Changers teams will have decent time to acclimate before the Game Changers World Championships takes place.
+        When it comes to Duelists with a flash ability, many of them have been outclassed by some of our Initiators when it comes to generating kills for themselves off their flashes. Skye and KAY/O are often better at taking aggressive 1v1s than Agents that we expect to be able to thrive in those scenarios like Yoru, Phoenix, or Reyna.
+        These changes are intended to increase the total teamplay output of Skye and KAY/O when they coordinate plays with their teammates, and decrease some of their efficacy when played alone. We also hope to <mark>increase the reward for putting more time into mastering their flash abilities</mark>. We believe that Initiators should still be able to make 
+        solo plays, but <mark>they should ideally be weaker than their Duelist counterparts in these scenarios</mark>. —<small>Dan “penguin” Hardison, Designer</small>
+    </p>
+  <h1 style="color: white; font-size: 250%;"><em>&nbsp; SKYE</em></h1>
+<p style="color: white; font-size: 95%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    Guiding Light’s destructibility didn’t feel like meaningful counterplay, instead overtly punishing when Skye tried to throw them at a longer range. By increasing the top-end output and rewarding Skye for bending her birds into the right spots, we intend to foster more teamwork and differentiate her Guiding Light from other flashes in the game—especially when
+     compared to Duelists.<br>
+  <br>
+    <mark>GUIDING LIGHT (E) flashbang scaling paradigm changed</mark><br>
+    - The max flash duration of Skye's Guiding Light now scales from 1s to <del>2.25s</del> over a <ins>.75s</ins> charge up after being cast<br>
+    - Guiding Light can no longer be shot and destroyed<br>
+    - New VFX, UI, and sounds added to communicate new gameplay intent<br>
+    - Unequip Delay out of Guiding Light increased <del>.75s</del> >>> <ins>.85s</ins><br>
+  </p>
+<h1 style="color: white; font-size: 250%;"><em>&nbsp; KAY/O</em></h1>
+  <p style="color: white; font-size: 95%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    KAY/O’s underhanded FLASH/DRIVE (right-click) has been overperforming relative to other “pop” flashes (example, Phoenix's flash or Yoru’s flash). And we feel as though labbed out left-click overhand throws aren’t generating a powerful enough reward for the mastery required to get them to pop in the right place. This tuning weakens the right-click when compared to
+    pop flashes from Duelists, with the belief that KAY/O should pay a cost for his versatility.<br>
+     <br>
+    <mark>FLASH/DRIVE (Q)</mark><br>
+    - Underhand (right-click) flashbang max duration decreased <del>>2s</del >>> <ins>1.25s</ins><br>
+    - Overhand (left-click) flashbang max duration increased <del>2s</del >>> <ins>2.25s</ins><br>
+    - Unequip Delay out of both flashes increased <del>.6s</del> >>> <ins>.85s</ins><br>
+  </p>
+<h1 style="color: white; font-size: 250%;"><em>&nbsp; REYNA</em></h1>
+  <p style="color: white; font-size: 95%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    Reyna’s flash underperforms as a selfish entry-tool, especially at higher skill levels. This set of changes is intended to give Reyna more agency around how she decides to peek after casting Leer. Also, it should sharpen Leer as a powerful angle-breaking tool against Operators on maps with longer sightlines. We’ve also felt like individual casts of the eye remain in 
+    the world for too long when the eye isn’t destroyed. If Reyna is now able to make more selfish plays off her Leer, we then wanted to reduce some of the value it has when thrown for teammates.<br>
+     <br>
+    <mark>LEER (C)</mark><br>
+    - Wind-up of nearsight effect decreased <del>.6s</del >>> <ins>.4s</ins><br>
+    - Range Restriction on Leer removed<br>
+    - Nearsight unequip delay decreased: <del>.7</del> >>> <ins>.5</ins><br>
+    - Duration decreased <del>2.6s</del> >>> <ins>2.0s</ins><br>
+  </p>
+</body>
+</html>
